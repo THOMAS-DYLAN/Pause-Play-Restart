@@ -1,0 +1,39 @@
+body {
+   background-color: blue;
+   color: white;
+   div {
+      display: inline-flex;
+      button {
+         height: 50px;
+         width: 50px;
+         margin-right: -50px;
+      }
+      .refresh {
+         margin-bottom: -50px;
+         margin-left: 50px;
+         font-size: 50px;
+         height: fit-content;
+      }
+      .refresh:hover {
+         color: red;
+         cursor: pointer;
+         animation: 5000s rotate;
+      }
+   }
+   p {
+      text-align: center;
+      margin-top: 21vh;
+      margin-bottom: 21vh;
+      font-size: 50vh;
+      text-shadow: 13px 0 white;
+   }
+   p:hover {
+      cursor: default;
+   }
+}
+
+@keyframes rotate {
+   100% {
+      rotate: 1800000deg;
+   }
+}
