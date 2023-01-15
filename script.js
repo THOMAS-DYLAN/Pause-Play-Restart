@@ -13,10 +13,11 @@ duration = audioElement.duration;
 
 $(".refresh").click(() => {
    interval = false;
-   $(".word").text("Hi");
-   clearInterval(x)
-   $(".button").text("Play Me!");
+   mute = false;
+   clearInterval(x);
    audioElement.currentTime = 0;
+   audioElement.volume = 1;
+   $(".volume").text("volume_up")
    audioElement.pause()
 })
 
@@ -60,4 +61,25 @@ $(".volume").click(()=>{
       $(".volume").text("volume_up")
       audioElement.volume = 1
    }
+})
+
+$(".playback").click(()=>{
+   if(audioElement.playbackRate == 1){
+      audioElement.playbackRate = 1.25;
+   } else if(audioElement.playbackRate == 1.25){
+      audioElement.playbackRate = 1.5;
+   } else if(audioElement.playbackRate == 1.5){
+      audioElement.playbackRate = 1.75;
+   } else if(audioElement.playbackRate == 1.75){
+      audioElement.playbackRate = 2;
+   } else if(audioElement.playbackRate == 2){
+      audioElement.playbackRate = .25;
+   } else if(audioElement.playbackRate == .25){
+      audioElement.playbackRate = .5;
+   } else if(audioElement.playbackRate == .5){
+      audioElement.playbackRate = .75;
+   } else if(audioElement.playbackRate == .75){
+      audioElement.playbackRate = 1;
+   }
+   $(".playback").text(audioElement.playbackRate + "x")
 })
