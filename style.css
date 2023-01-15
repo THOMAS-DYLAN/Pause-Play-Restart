@@ -4,8 +4,7 @@
     overflow: hidden;
   }
   body {
-    width: 100%;
-    background-color: hsl(0deg, 0%, 19%);
+    background-color: rgb(252, 63, 42);
     color: white;
     justify-content: center;
   }
@@ -17,21 +16,19 @@
     bottom: 0;
     height: 20vh;
   }
+  body .main .buttondiv .songtitle {
+    font-size: 25px;
+    color: greenyellow;
+    position: absolute;
+    top: -10vh;
+    width: 50vh;
+    margin-left: 14vw;
+  }
   body .main .buttondiv .buttons {
     position: relative;
     left: 25%;
     width: 50%;
     height: 10vh;
-    padding-top: 5vh;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-  }
-  body .main .buttondiv .buttons .songtitle {
-    font-size: 20px;
-    color: greenyellow;
-    position: absolute;
-    top: -25vh;
-    width: 100%;
   }
   body .main .buttondiv .buttons .b {
     display: inline-flex;
@@ -44,6 +41,7 @@
     width: 50px;
     border-radius: 100%;
     border: none;
+    margin-left: -25%;
     background: none;
     color: white;
   }
@@ -59,7 +57,7 @@
     background: none;
     color: white;
     position: absolute;
-    left: 60%;
+    left: 80%;
   }
   body .main .buttondiv .buttons .b .pause:hover {
     background-color: rgba(200, 200, 200, 0.3);
@@ -71,7 +69,7 @@
     border-radius: 100%;
     border: none;
     position: absolute;
-    left: 20%;
+    left: -5%;
     background: none;
     color: white;
   }
@@ -83,8 +81,7 @@
     margin-bottom: -50px;
     font-size: 50px;
     height: fit-content;
-    position: absolute;
-    left: 40%;
+    margin-left: 35%;
   }
   body .main .buttondiv .buttons .b .refresh:hover {
     color: red;
@@ -96,7 +93,7 @@
     width: 50px;
     border-radius: 100%;
     position: absolute;
-    right: 0;
+    right: -25%;
     border: none;
     background: none;
     color: white;
@@ -107,12 +104,12 @@
     border: 0.1px solid rgba(0, 0, 0, 0.5);
   }
   body img {
-    display: block;
-    height: 50vh;
     width: 50vh;
+    height: 50vh;
+    display: block;
+    margin-top: 5vh;
     margin-left: auto;
     margin-right: auto;
-    padding: 0;
   }
   body p {
     margin-top: 21vh;
@@ -139,10 +136,13 @@
 @media (min-width: 700px) {
   html {
     height: 100vh;
+    width: 100vw;
     overflow: hidden;
+    background: linear-gradient(197deg, rgba(255, 0, 0, 0.6), rgba(0, 59, 255, 0.5) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.3), rgb(255, 0, 166) 70.71%), linear-gradient(336deg, orange, red 70.71%);
   }
   body {
-    background-color: hsl(0deg, 0%, 19%);
+    height: 0vh;
+    background-color: hidden;
     color: white;
     justify-content: center;
   }
@@ -155,6 +155,15 @@
     bottom: 0;
     height: 20vh;
   }
+  body .main .buttondiv .songtitle {
+    font-size: 40px;
+    color: greenyellow;
+    position: absolute;
+    top: 0;
+    right: 25%;
+    z-index: 5;
+    width: 50%;
+  }
   body .main .buttondiv .buttons {
     position: relative;
     left: 25%;
@@ -164,13 +173,6 @@
     background: gray;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
-  }
-  body .main .buttondiv .buttons .songtitle {
-    font-size: 40px;
-    color: greenyellow;
-    position: absolute;
-    top: 0;
-    width: 100%;
   }
   body .main .buttondiv .buttons .b {
     display: inline-flex;
@@ -184,7 +186,7 @@
     border-radius: 100%;
     border: none;
     position: relative;
-    left: 3%;
+    left: 28%;
     background: none;
     color: white;
   }
@@ -200,7 +202,7 @@
     background: none;
     color: white;
     position: absolute;
-    left: 57%;
+    left: 53%;
   }
   body .main .buttondiv .buttons .b .pause:hover {
     background-color: rgba(200, 200, 200, 0.3);
@@ -225,7 +227,7 @@
     font-size: 50px;
     height: fit-content;
     position: absolute;
-    left: 47%;
+    left: 10%;
   }
   body .main .buttondiv .buttons .b .refresh:hover {
     color: red;
