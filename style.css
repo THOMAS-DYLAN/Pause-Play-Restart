@@ -106,10 +106,13 @@
     border: 0.1px solid rgba(0, 0, 0, 0.5);
   }
   body img {
-    height: 50vh;
+    height: 80vh;
     width: 50vw;
     position: absolute;
-    left: 25vw;
+    top: 0;
+    margin-bottom: 0;
+    margin-left: 24.4%;
+    padding: 0;
   }
   body p {
     margin-top: 21vh;
