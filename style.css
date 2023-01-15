@@ -22,10 +22,10 @@ body div .refresh:hover {
   animation: 5000s rotate;
 }
 body p {
-  text-align: center;
+  margin-left: 0;
   margin-top: 21vh;
   margin-bottom: 21vh;
-  font-size: 50vh;
+  font-size: 40vh;
   text-shadow: 13px 0 white;
 }
 body p:hover {
