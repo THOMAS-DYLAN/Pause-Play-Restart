@@ -1,32 +1,115 @@
+html {
+  height: 100vh;
+  overflow: hidden;
+}
+
 body {
-  background-color: blue;
+  background-color: hsl(0deg, 0%, 19%);
   color: white;
+  justify-content: center;
 }
-body div {
+body .main .buttondiv {
+  margin-top: -9.7vh;
+  background-color: black;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 20vh;
+}
+body .main .buttondiv .buttons {
+  position: relative;
+  left: 25%;
+  width: 50%;
+  height: 10vh;
+  padding-top: 5vh;
+  background: gray;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+body .main .buttondiv .buttons .songtitle {
+  font-size: 40px;
+  color: greenyellow;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+body .main .buttondiv .buttons .b {
   display: inline-flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
-body div button {
+body .main .buttondiv .buttons .b .pause {
   height: 50px;
   width: 50px;
-  margin-right: -50px;
+  border-radius: 100%;
+  border: none;
+  background: none;
+  color: white;
+  position: relative;
+  left: 37%;
 }
-body div .refresh {
+body .main .buttondiv .buttons .b .pause:hover {
+  background-color: rgba(200, 200, 200, 0.3);
+  border: 0.1px solid rgba(0, 0, 0, 0.5);
+}
+body .main .buttondiv .buttons .b .play {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  border: none;
+  position: relative;
+  left: 39.3%;
+  background: none;
+  color: white;
+}
+body .main .buttondiv .buttons .b .play:hover {
+  background-color: rgba(200, 200, 200, 0.3);
+  border: 0.1px solid rgba(0, 0, 0, 0.5);
+}
+body .main .buttondiv .buttons .b .refresh {
   margin-bottom: -50px;
-  margin-left: 50px;
   font-size: 50px;
   height: fit-content;
+  position: relative;
+  left: 38%;
 }
-body div .refresh:hover {
+body .main .buttondiv .buttons .b .refresh:hover {
   color: red;
   cursor: pointer;
   animation: 5000s rotate;
 }
+body .main .buttondiv .buttons .b .mute {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  border: none;
+  position: absolute;
+  right: 0;
+  margin-right: 3%;
+  background: none;
+  color: white;
+}
+body .main .buttondiv .buttons .b .mute:hover {
+  color: black;
+}
+body img {
+  height: 80vh;
+  width: 50vw;
+  position: absolute;
+  top: 0;
+  margin-bottom: 0;
+  margin-left: 24.4%;
+  padding: 0;
+}
 body p {
-  margin-left: 0;
   margin-top: 21vh;
   margin-bottom: 21vh;
-  font-size: 40vh;
-  text-shadow: 13px 0 white;
+  font-size: 40px;
+  text-align: center;
+  animation: 3s embedding forwards;
+  margin-top: -0.5%;
 }
 body p:hover {
   cursor: default;
@@ -35,5 +118,10 @@ body p:hover {
 @keyframes rotate {
   100% {
     rotate: 1800000deg;
+  }
+}
+@keyframes colors {
+  100% {
+    color: black;
   }
 }/*# sourceMappingURL=style.css.map */
