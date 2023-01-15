@@ -4,6 +4,7 @@
     overflow: hidden;
   }
   body {
+    width: 100%;
     background-color: hsl(0deg, 0%, 19%);
     color: white;
     justify-content: center;
@@ -106,12 +107,11 @@
     border: 0.1px solid rgba(0, 0, 0, 0.5);
   }
   body img {
-    height: 640px;
-    width: 640px;
-    position: absolute;
-    top: 0;
-    margin-bottom: 0;
-    margin-left: 24.4%;
+    display: block;
+    height: 50vh;
+    width: 50vh;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
   }
   body p {
