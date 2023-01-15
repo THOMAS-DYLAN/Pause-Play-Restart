@@ -1,173 +1,373 @@
-html {
-   height: 100vh;
-   overflow: hidden;
-}
+@media (min-width: 200px) {
+   html {
+      height: 100vh;
+      overflow: hidden;
+   }
 
-body {
-   background-color: hsl(0, 0%, 19%);
-   color: white;
-   justify-content: center;
-   // .border {
-   //    width: 10px;
-   //    background: black;
-   //    z-index: 500;
-   // }
-   // .container {
-   //    display: inline-flex;
-   //    margin-left: 10vw;
-   //    margin-top: 10vh;
-   //    height: 80vh;
-   //    width: 80vw;
-   //    background-color: white;
-   //    justify-content: center;
-   //    .border {
-   //       width: 10px;
-   //       background: black;
-   //    }
-   //    button {
-   //       width: 100px;
-   //       height: 30px;
-   //       border-radius: 25px;
-   //       margin-top: 65vh;
-   //       margin-right: 2.5%;
-   //       margin-left: 2.5%;
-   //       border: 2px solid black;
-   //    }
-   // }
-   .main {
-      .buttondiv {
-         margin-top: -9.7vh;
-         background-color: black;
-         width: 100%;
-         position: absolute;
-         left: 0;
-         bottom: 0;
-         height: 20vh;
+   body {
+      background-color: hsl(0, 0%, 19%);
+      color: white;
+      justify-content: center;
+      // .border {
+      //    width: 10px;
+      //    background: black;
+      //    z-index: 500;
+      // }
+      // .container {
+      //    display: inline-flex;
+      //    margin-left: 10vw;
+      //    margin-top: 10vh;
+      //    height: 80vh;
+      //    width: 80vw;
+      //    background-color: white;
+      //    justify-content: center;
+      //    .border {
+      //       width: 10px;
+      //       background: black;
+      //    }
+      //    button {
+      //       width: 100px;
+      //       height: 30px;
+      //       border-radius: 25px;
+      //       margin-top: 65vh;
+      //       margin-right: 2.5%;
+      //       margin-left: 2.5%;
+      //       border: 2px solid black;
+      //    }
+      // }
+      .main {
+         .buttondiv {
+            margin-top: -9.7vh;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 20vh;
 
-         .buttons {
-            position: relative;
-            left: 25%;
-            width: 50%;
-            height: 10vh;
-            padding-top: 5vh;
-            background: gray;
-            border-bottom-left-radius: 50px;
-            border-bottom-right-radius: 50px;
-            .songtitle {
-               font-size: 40px;
-               color: greenyellow;
-               position: absolute;
-               top: 0;
-               width: 100%;
-            }
-            .b {
-               display: inline-flex;
-               position: absolute;
-               bottom: 0;
-               width: 100%;
-               .pause {
-                  height: 50px;
-                  width: 50px;
-                  border-radius: 100%;
-                  border: none;
-                  background: none;
-                  color: white;
-                  position: relative;
-                  left: 37%;
-                  &:hover {
-                     background-color: rgba(200, 200, 200, 0.3);
-                     border: 0.1px solid rgba(0, 0, 0, 0.5);
-                  }
-               }
-
-               .play {
-                  height: 50px;
-                  width: 50px;
-                  border-radius: 100%;
-                  border: none;
-                  position: relative;
-                  left: 39.3%;
-                  background: none;
-                  color: white;
-                  &:hover {
-                     background-color: rgba(200, 200, 200, 0.3);
-                     border: 0.1px solid rgba(0, 0, 0, 0.5);
-                  }
-               }
-
-               .refresh {
-                  margin-bottom: -50px;
-                  font-size: 50px;
-                  height: fit-content;
-                  position: relative;
-                  left: 38%;
-               }
-               .refresh:hover {
-                  color: red;
-                  cursor: pointer;
-                  animation: 5000s rotate;
-               }
-               .mute {
-                  height: 50px;
-                  width: 50px;
-                  border-radius: 100%;
-                  border: none;
+            .buttons {
+               position: relative;
+               left: 25%;
+               width: 50%;
+               height: 10vh;
+               padding-top: 5vh;
+               border-bottom-left-radius: 50px;
+               border-bottom-right-radius: 50px;
+               .songtitle {
+                  font-size: 20px;
+                  color: greenyellow;
                   position: absolute;
-                  right: 0;
-                  margin-right: 3%;
-                  background: none;
-                  color: white;
-                  &:hover {
-                     color: black;
+                  top: -25vh;
+                  width: 100%;
+               }
+               .b {
+                  display: inline-flex;
+                  position: absolute;
+                  bottom: 40%;
+                  width: 100%;
+                  .playback {
+                     height: 50px;
+                     width: 50px;
+                     border-radius: 100%;
+                     border: none;
+                     background: none;
+                     color: white;
+                     &:hover {
+                        background-color: rgba(200, 200, 200, 0.3);
+                        border: 0.1px solid rgba(0, 0, 0, 0.5);
+                     }
+                  }
+                  .pause {
+                     height: 50px;
+                     width: 50px;
+                     border-radius: 100%;
+                     border: none;
+                     background: none;
+                     color: white;
+                     position: absolute;
+                     left: 60%;
+                     &:hover {
+                        background-color: rgba(200, 200, 200, 0.3);
+                        border: 0.1px solid rgba(0, 0, 0, 0.5);
+                     }
+                  }
+
+                  .play {
+                     height: 50px;
+                     width: 50px;
+                     border-radius: 100%;
+                     border: none;
+                     position: absolute;
+                     left: 20%;
+                     background: none;
+                     color: white;
+                     &:hover {
+                        background-color: rgba(200, 200, 200, 0.3);
+                        border: 0.1px solid rgba(0, 0, 0, 0.5);
+                     }
+                  }
+
+                  .refresh {
+                     margin-bottom: -50px;
+                     font-size: 50px;
+                     height: fit-content;
+                     position: absolute;
+                     left: 40%;
+                  }
+                  .refresh:hover {
+                     color: red;
+                     cursor: pointer;
+                     animation: 5000s rotate;
+                  }
+                  .mute {
+                     height: 50px;
+                     width: 50px;
+                     border-radius: 100%;
+                     position: absolute;
+                     right: 0;
+                     border: none;
+                     background: none;
+                     color: white;
+                     &:hover {
+                        color: black;
+                        background-color: rgba(200, 200, 200, 0.3);
+                        border: 0.1px solid rgba(0, 0, 0, 0.5);
+                     }
                   }
                }
             }
          }
       }
-   }
-   img {
-      height: 80vh;
-      width: 50vw;
-      position: absolute;
-      top: 0;
-      margin-bottom: 0;
-      margin-left: 24.4%;
-      padding: 0;
+      img {
+         height: 50vh;
+         width: 50vw;
+         position: absolute;
+         left: 25vw;
+      }
+
+      p {
+         margin-top: 21vh;
+         margin-bottom: 21vh;
+         font-size: 40px;
+         text-align: center;
+         animation: 3s embedding forwards;
+         margin-top: -0.5%;
+      }
+      p:hover {
+         cursor: default;
+      }
+
+      // .word{
+      //    margin-top: -5%;
+      //    padding-bottom: 2.5%;
+      // }
    }
 
-   p {
-      margin-top: 21vh;
-      margin-bottom: 21vh;
-      font-size: 40px;
-      text-align: center;
-      animation: 3s embedding forwards;
-      margin-top: -0.5%;
-   }
-   p:hover {
-      cursor: default;
+   @keyframes rotate {
+      100% {
+         rotate: 1800000deg;
+      }
    }
 
-   // .word{
-   //    margin-top: -5%;
-   //    padding-bottom: 2.5%;
+   // @keyframes embedding {
+   //    100% {
+   //       color: rgba(0, 0, 0, 0.4);
+   //       text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
+   //    }
    // }
-}
 
-@keyframes rotate {
-   100% {
-      rotate: 1800000deg;
+   @keyframes colors {
+      100% {
+         color: black;
+      }
    }
 }
 
-// @keyframes embedding {
-//    100% {
-//       color: rgba(0, 0, 0, 0.4);
-//       text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
-//    }
-// }
+@media (min-width: 700px) {
+   html {
+      height: 100vh;
+      overflow: hidden;
+   }
 
-@keyframes colors {
-   100% {
-      color: black;
+   body {
+      background-color: hsl(0, 0%, 19%);
+      color: white;
+      justify-content: center;
+      // .border {
+      //    width: 10px;
+      //    background: black;
+      //    z-index: 500;
+      // }
+      // .container {
+      //    display: inline-flex;
+      //    margin-left: 10vw;
+      //    margin-top: 10vh;
+      //    height: 80vh;
+      //    width: 80vw;
+      //    background-color: white;
+      //    justify-content: center;
+      //    .border {
+      //       width: 10px;
+      //       background: black;
+      //    }
+      //    button {
+      //       width: 100px;
+      //       height: 30px;
+      //       border-radius: 25px;
+      //       margin-top: 65vh;
+      //       margin-right: 2.5%;
+      //       margin-left: 2.5%;
+      //       border: 2px solid black;
+      //    }
+      // }
+      .main {
+         .buttondiv {
+            margin-top: -9.7vh;
+            background-color: black;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 20vh;
+
+            .buttons {
+               position: relative;
+               left: 25%;
+               width: 50%;
+               height: 10vh;
+               padding-top: 5vh;
+               background: gray;
+               border-bottom-left-radius: 50px;
+               border-bottom-right-radius: 50px;
+               .songtitle {
+                  font-size: 40px;
+                  color: greenyellow;
+                  position: absolute;
+                  top: 0;
+                  width: 100%;
+               }
+               .b {
+                  display: inline-flex;
+                  position: absolute;
+                  bottom: 0;
+                  width: 100%;
+                  .playback {
+                     height: 50px;
+                     width: 50px;
+                     border-radius: 100%;
+                     border: none;
+                     position: relative;
+                     left: 3%;
+                     background: none;
+                     color: white;
+                     &:hover {
+                        background-color: rgba(200, 200, 200, 0.3);
+                        border: 0.1px solid rgba(0, 0, 0, 0.5);
+                     }
+                  }
+                  .pause {
+                     height: 50px;
+                     width: 50px;
+                     border-radius: 100%;
+                     border: none;
+                     background: none;
+                     color: white;
+                     position: absolute;
+                     left: 57%;
+                     &:hover {
+                        background-color: rgba(200, 200, 200, 0.3);
+                        border: 0.1px solid rgba(0, 0, 0, 0.5);
+                     }
+                  }
+
+                  .play {
+                     height: 50px;
+                     width: 50px;
+                     border-radius: 100%;
+                     border: none;
+                     position: absolute;
+                     left: 37%;
+                     background: none;
+                     color: white;
+                     &:hover {
+                        background-color: rgba(200, 200, 200, 0.3);
+                        border: 0.1px solid rgba(0, 0, 0, 0.5);
+                     }
+                  }
+
+                  .refresh {
+                     margin-bottom: -50px;
+                     font-size: 50px;
+                     height: fit-content;
+                     position: absolute;
+                     left: 47%;
+                  }
+                  .refresh:hover {
+                     color: red;
+                     cursor: pointer;
+                     animation: 5000s rotate;
+                  }
+                  .mute {
+                     height: 50px;
+                     width: 50px;
+                     border-radius: 100%;
+                     border: none;
+                     position: absolute;
+                     right: 0;
+                     margin-right: 3%;
+                     background: none;
+                     color: white;
+                     &:hover {
+                        color: black;
+                     }
+                  }
+               }
+            }
+         }
+      }
+      img {
+         height: 80vh;
+         width: 50vw;
+         position: absolute;
+         top: 0;
+         margin-bottom: 0;
+         margin-left: 24.4%;
+         padding: 0;
+      }
+
+      p {
+         margin-top: 21vh;
+         margin-bottom: 21vh;
+         font-size: 40px;
+         text-align: center;
+         animation: 3s embedding forwards;
+         margin-top: -0.5%;
+      }
+      p:hover {
+         cursor: default;
+      }
+
+      // .word{
+      //    margin-top: -5%;
+      //    padding-bottom: 2.5%;
+      // }
+   }
+
+   @keyframes rotate {
+      100% {
+         rotate: 1800000deg;
+      }
+   }
+
+   // @keyframes embedding {
+   //    100% {
+   //       color: rgba(0, 0, 0, 0.4);
+   //       text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
+   //    }
+   // }
+
+   @keyframes colors {
+      100% {
+         color: black;
+      }
    }
 }
