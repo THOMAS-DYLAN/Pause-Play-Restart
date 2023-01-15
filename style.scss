@@ -5,7 +5,7 @@
    }
 
    body {
-      background-color: hsl(0, 0%, 19%);
+      background-color: rgb(252, 63, 42);
       color: white;
       justify-content: center;
       // .border {
@@ -43,22 +43,20 @@
             left: 0;
             bottom: 0;
             height: 20vh;
-
+            .songtitle {
+               font-size: 25px;
+               color: greenyellow;
+               position: absolute;
+               top: -10vh;
+               width: 50vh;
+               margin-left: 14vw;
+            }
             .buttons {
                position: relative;
                left: 25%;
                width: 50%;
                height: 10vh;
-               padding-top: 5vh;
-               border-bottom-left-radius: 50px;
-               border-bottom-right-radius: 50px;
-               .songtitle {
-                  font-size: 20px;
-                  color: greenyellow;
-                  position: absolute;
-                  top: -25vh;
-                  width: 100%;
-               }
+
                .b {
                   display: inline-flex;
                   position: absolute;
@@ -69,6 +67,7 @@
                      width: 50px;
                      border-radius: 100%;
                      border: none;
+                     margin-left: -25%;
                      background: none;
                      color: white;
                      &:hover {
@@ -84,7 +83,7 @@
                      background: none;
                      color: white;
                      position: absolute;
-                     left: 60%;
+                     left: 80%;
                      &:hover {
                         background-color: rgba(200, 200, 200, 0.3);
                         border: 0.1px solid rgba(0, 0, 0, 0.5);
@@ -97,7 +96,7 @@
                      border-radius: 100%;
                      border: none;
                      position: absolute;
-                     left: 20%;
+                     left: -5%;
                      background: none;
                      color: white;
                      &:hover {
@@ -110,8 +109,7 @@
                      margin-bottom: -50px;
                      font-size: 50px;
                      height: fit-content;
-                     position: absolute;
-                     left: 40%;
+                     margin-left: 35%;
                   }
                   .refresh:hover {
                      color: red;
@@ -123,7 +121,7 @@
                      width: 50px;
                      border-radius: 100%;
                      position: absolute;
-                     right: 0;
+                     right: -25%;
                      border: none;
                      background: none;
                      color: white;
@@ -138,13 +136,12 @@
          }
       }
       img {
-         height: 80vh;
-         width: 50vw;
-         position: absolute;
-         top: 0;
-         margin-bottom: 0;
-         margin-left: 24.4%;
-         padding: 0;
+         width: 50vh;
+         height: 50vh;
+         display: block;
+         margin-top: 5vh;
+         margin-left: auto;
+         margin-right: auto;
       }
 
       p {
@@ -188,13 +185,22 @@
 @media (min-width: 700px) {
    html {
       height: 100vh;
+      width: 100vw;
       overflow: hidden;
+      background: linear-gradient(197deg, rgba(255,0,0,.6), rgba(0,59,255, .5) 70.71%),
+      linear-gradient(127deg, rgba(0,255,0,.3), rgb(255, 0, 166) 70.71%),
+      linear-gradient(336deg, orange, red 70.71%);
+      // &:hover {
+      //    animation: 20s colorchange forwards;
+      // }
    }
 
    body {
-      background-color: hsl(0, 0%, 19%);
+      height: 0vh;
+      background-color: hidden;
       color: white;
       justify-content: center;
+
       // .border {
       //    width: 10px;
       //    background: black;
@@ -231,7 +237,15 @@
             left: 0;
             bottom: 0;
             height: 20vh;
-
+            .songtitle {
+               font-size: 40px;
+               color: greenyellow;
+               position: absolute;
+               top: 0;
+               right: 25%;
+               z-index: 5;
+               width: 50%;
+            }
             .buttons {
                position: relative;
                left: 25%;
@@ -241,13 +255,6 @@
                background: gray;
                border-bottom-left-radius: 50px;
                border-bottom-right-radius: 50px;
-               .songtitle {
-                  font-size: 40px;
-                  color: greenyellow;
-                  position: absolute;
-                  top: 0;
-                  width: 100%;
-               }
                .b {
                   display: inline-flex;
                   position: absolute;
@@ -259,7 +266,7 @@
                      border-radius: 100%;
                      border: none;
                      position: relative;
-                     left: 3%;
+                     left: 28%;
                      background: none;
                      color: white;
                      &:hover {
@@ -275,7 +282,7 @@
                      background: none;
                      color: white;
                      position: absolute;
-                     left: 57%;
+                     left: 53%;
                      &:hover {
                         background-color: rgba(200, 200, 200, 0.3);
                         border: 0.1px solid rgba(0, 0, 0, 0.5);
@@ -302,7 +309,7 @@
                      font-size: 50px;
                      height: fit-content;
                      position: absolute;
-                     left: 47%;
+                     left: 10%;
                   }
                   .refresh:hover {
                      color: red;
@@ -373,4 +380,37 @@
          color: black;
       }
    }
+
+   // @keyframes colorchange {
+   //    100% {
+   //       background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+   //       linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+   //       linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+   //    }
+   //    80% {
+   //       background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+   //       linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+   //       linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+   //    }
+   //    60% {
+   //       background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+   //       linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+   //       linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+   //    }
+   //    40% {
+   //       background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+   //       linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+   //       linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+   //    }
+   //    20% {
+   //       background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+   //       linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+   //       linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+   //    }
+   //    0% {
+   //       background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(0,0,255, .8) 70.71%),
+   //       linear-gradient(127deg, rgba(0,255,0,.8), violet 70.71%),
+   //       linear-gradient(336deg, orange, red 70.71%);
+   //    }
+   // }
 }
