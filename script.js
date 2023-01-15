@@ -51,7 +51,7 @@ $(".pause").click(() => {
    }
 })
 
-$(".volume").click(()=>{
+$(".mute").click(()=>{
    if(mute == false){
       mute = true;
       $(".volume").text("volume_off")
