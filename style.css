@@ -22,7 +22,7 @@
     position: absolute;
     top: -10vh;
     width: 50vh;
-    margin-left: 7vw;
+    margin-left: 10vw;
   }
   body .main .buttondiv .buttons {
     position: relative;
@@ -86,7 +86,6 @@
   body .main .buttondiv .buttons .b .refresh:hover {
     color: red;
     cursor: pointer;
-    animation: 5000s rotate;
   }
   body .main .buttondiv .buttons .b .mute {
     height: 50px;
@@ -122,18 +121,13 @@
   body p:hover {
     cursor: default;
   }
-  @keyframes rotate {
-    100% {
-      rotate: 1800000deg;
-    }
-  }
   @keyframes colors {
     100% {
       color: black;
     }
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 700px) {
   html {
     height: 100vh;
     width: 100vw;

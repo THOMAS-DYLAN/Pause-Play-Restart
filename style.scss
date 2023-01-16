@@ -114,7 +114,6 @@
                   .refresh:hover {
                      color: red;
                      cursor: pointer;
-                     animation: 5000s rotate;
                   }
                   .mute {
                      height: 50px;
@@ -160,12 +159,6 @@
       //    margin-top: -5%;
       //    padding-bottom: 2.5%;
       // }
-   }
-
-   @keyframes rotate {
-      100% {
-         rotate: 1800000deg;
-      }
    }
 
    // @keyframes embedding {
