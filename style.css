@@ -4,7 +4,7 @@
     overflow: hidden;
   }
   body {
-    background-color: rgb(252, 63, 244);
+    background-color: rgb(252, 63, 47);
     color: white;
     justify-content: center;
   }
@@ -20,7 +20,7 @@
     font-size: 25px;
     color: greenyellow;
     position: absolute;
-    top: -9vh;
+    top: -7vh;
     width: 50vh;
     margin-left: 2vw;
   }
